@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aivare | Official Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0a0a0a, #0e1625);
+      color: #fff;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #00aaff;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Hero Section */
+    #home {
+      background: radial-gradient(circle at top, #101827, #000);
+    }
+
+    .logo-box {
+      background: linear-gradient(145deg, #1a1a1a, #0e0e0e);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 170, 255, 0.3);
+      animation: logoZoom 2s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .logo-box img {
+      width: 250px;
+      border-radius: 15px;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      color: #00aaff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.8;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    .features, .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+    }
+
+    .card h3 {
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: #bbb;
+      text-align: center;
+      padding: 20px 10px;
+      border-top: 1px solid #1e293b;
+    }
+
+    .contact a {
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AIVARE</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الشركة</a>
+      <a href="#services">الخدمات</a>
+      <a href="#features">المميزات</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="logo-box">
+      <img src="https://i.postimg.cc/kggtYRYW/photo-2025-10-16-00-30-27.jpg" alt="Aivare Logo" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">عن شركة Aivare</h2>
+    <p>
+      شركة <strong>Aivare</strong> هي شركة تكنولوجية متخصصة في تطوير المواقع الإلكترونية، التطبيقات الذكية، والمنصات الرقمية المتكاملة.
+      تهدف الشركة إلى تقديم حلول رقمية احترافية تجمع بين السرعة، الأمان، والجودة العالية.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">الخدمات</h2>
+    <div class="services">
+      <div class="card">
+        <h3>تطوير المواقع</h3>
+        <p>تصميم وتطوير مواقع إلكترونية احترافية وسريعة الاستجابة لجميع الأجهزة.</p>
+      </div>
+      <div class="card">
+        <h3>تطبيقات الهاتف</h3>
+        <p>برمجة تطبيقات أندرويد وiOS بواجهات احترافية وتجربة مستخدم مميزة.</p>
+      </div>
+      <div class="card">
+        <h3>المنصات الرقمية</h3>
+        <p>إنشاء منصات تعليمية وتجارية متكاملة بإدارة ذكية وأمان متقدم.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2 class="section-title">مميزات الشركة</h2>
+    <div class="features">
+      <div class="card">
+        <h3>أداء عالي</h3>
+        <p>كل المشاريع تُبنى بمعايير أداء قوية لضمان سرعة واستقرار المنصات.</p>
+      </div>
+      <div class="card">
+        <h3>أمان متقدم</h3>
+        <p>نستخدم أحدث تقنيات الأمان لحماية البيانات والمستخدمين.</p>
+      </div>
+      <div class="card">
+        <h3>تصميم عصري</h3>
+        <p>نعتمد على أحدث الاتجاهات التصميمية لإبراز هوية Aivare القوية.</p>
+      </div>
+      <div class="card">
+        <h3>دعم فني سريع</h3>
+        <p>خدمة عملاء جاهزة دائمًا للاستجابة السريعة لأي مشكلة تقنية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <p>📞 <a href="https://wa.me/201271236227" target="_blank">01271236227</a></p>
+    <p>✉️ يمكنك مراسلتنا عبر البريد الإلكتروني لاحقًا عند إضافته.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aivare. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
